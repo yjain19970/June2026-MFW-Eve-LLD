@@ -9,3 +9,4 @@ public class AutoPoly extends VehiclePoly {
     }
 
 }
+
