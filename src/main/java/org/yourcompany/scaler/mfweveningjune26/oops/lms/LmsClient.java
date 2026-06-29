@@ -1,5 +1,8 @@
 package org.yourcompany.scaler.mfweveningjune26.oops.lms;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LmsClient {
     public static void main(String[] args) {
         Member asha     = new Member("Asha", "asha@email.com");
@@ -12,5 +15,23 @@ public class LmsClient {
         System.out.println("Member ID:    " + asha.getUserId());
         System.out.println("Librarian ID: " + ravi.getUserId());
         System.out.println("Total users:  " + User.getTotalUsers());
+
+
+        System.out.println("\n MILESTONE-2: \n");
+
+        Book novel  = new NovelBook("N-1", "Dune", "Frank Herbert", "Sci-Fi");
+
+        novel.displayBookDetails();
+
+        System.out.println("Available? " + novel.isAvailable());    // true
+        System.out.println("Lended :      " + novel.lend(asha));       // true
+        System.out.println("Available? " + novel.isAvailable());    // false
+        System.out.println("Lend again:" + novel.lend(asha));       // false        
+    
+    
+        List<Lendable> allLendableBooks = new ArrayList<>();
+        allLendableBooks.add(novel);
+        allLendableBooks.add(novel);
+
     }
 }
