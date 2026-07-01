@@ -33,5 +33,13 @@ public class LmsClient {
         allLendableBooks.add(novel);
         allLendableBooks.add(novel);
 
+
+        LibraryManagementSystem lbms = new LibraryManagementSystem();
+        lbms.addBook(novel);
+        lbms.registerUser(asha);
+        lbms.lendBook(asha, novel);
+        lbms.returnBook(asha, novel);
+        
+
     }
 }
