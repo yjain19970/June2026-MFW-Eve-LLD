@@ -1,5 +1,8 @@
 package org.yourcompany.scaler.mfweveningjune26.multithreading;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import org.yourcompany.scaler.mfweveningjune26.multithreading.numberprinter.NumberPrinterTask;
 
 public class Client {
@@ -11,11 +14,22 @@ public class Client {
         // Thread t1 = new Thread(hwpt);
         // t1.start();
 
+        // for(int i=1;i<=15;i++){
+        //     NumberPrinterTask npt = new NumberPrinterTask(i);
+        //     Thread t2 = new Thread(npt);
+        //     t2.start();            
+        // }
+
+        ExecutorService executorService =
+             Executors.newCachedThreadPool();
+        
         for(int i=1;i<=15;i++){
             NumberPrinterTask npt = new NumberPrinterTask(i);
-            Thread t2 = new Thread(npt);
-            t2.start();            
+            executorService.submit(npt);
         }
+
+        executorService.shutdown();
+
 
 
 
