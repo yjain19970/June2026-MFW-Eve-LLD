@@ -19,7 +19,8 @@ public class Client {
                 inventory2.addItem(earphones);   // throws InvalidQuantityException
                 inventory2.addItem(javaBook); // X
                 inventory2.addItem(tShirt); // X
-        } catch (InvalidQuantityException e) {
+        } 
+        catch (InvalidQuantityException e) {
             System.out.println("Exception happened: InvalidQuantityException" );
         } catch(DuplicateIdException e){
             System.out.println("executing this block!!!");
