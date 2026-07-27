@@ -1,4 +1,4 @@
-package org.yourcompany.scaler.mfweveningjune26.designpattern;
+package org.yourcompany.scaler.mfweveningjune26.designpattern.singleton;
 
 public class Client {
     public static void main(String[] args) {

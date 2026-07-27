@@ -1,4 +1,4 @@
-package org.yourcompany.scaler.mfweveningjune26.designpattern.eagerloading;
+package org.yourcompany.scaler.mfweveningjune26.designpattern.singleton.eagerloading;
 
 
 public class DBConnEagerLoading {

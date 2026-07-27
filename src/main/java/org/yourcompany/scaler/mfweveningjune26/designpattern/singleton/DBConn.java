@@ -1,4 +1,4 @@
-package org.yourcompany.scaler.mfweveningjune26.designpattern;
+package org.yourcompany.scaler.mfweveningjune26.designpattern.singleton;
 
 public class DBConn {
     private static DBConn instance;

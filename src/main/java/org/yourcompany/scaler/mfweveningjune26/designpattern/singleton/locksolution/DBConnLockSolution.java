@@ -1,4 +1,4 @@
-package org.yourcompany.scaler.mfweveningjune26.designpattern.locksolution;
+package org.yourcompany.scaler.mfweveningjune26.designpattern.singleton.locksolution;
 
 
 public class DBConnLockSolution {
