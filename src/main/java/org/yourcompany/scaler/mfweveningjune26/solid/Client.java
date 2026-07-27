@@ -8,15 +8,15 @@ public class Client {
         Bird b1 = new Peacock();
         //b1.fly();
 
-        Bird b2 = new Sparrow();
+        Bird b2 = new Sparrow(null);
         //b2.fly();
 
         List<Bird> birds = new ArrayList<>();
         birds.add(new Penguin());
-        birds.add(new Sparrow());
+        birds.add(new Sparrow(null));
         birds.add(new Peacock());
 
-        Bird b4 = new Pigeon(new AdvancedPigeonSparrowFlyingBehaviour());
+        Bird b4 = new Pigeon(new AdvancedPigeonSparrowFlyingBehaviour(null));
         
         Bird b5 = new Pigeon(new PigeonSparrowFlyingBehaviour());
         
@@ -30,7 +30,7 @@ public class Client {
                 continue;
             }
 
-            b.fly();
+            //b.fly();
         }
         // Liscov's substituion principle says...
         /*
