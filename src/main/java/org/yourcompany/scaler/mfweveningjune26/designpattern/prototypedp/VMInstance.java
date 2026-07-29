@@ -12,6 +12,20 @@ public class VMInstance implements Prototype<VMInstance> {
         
     }
 
+    
+
+    public VMInstance(String os, String runtime, boolean monitoringAgent, boolean securityPatches, String hostname,
+            String ipAddress) {
+        this.os = os;
+        this.runtime = runtime;
+        this.monitoringAgent = monitoringAgent;
+        this.securityPatches = securityPatches;
+        this.hostname = hostname;
+        this.ipAddress = ipAddress;
+    }
+
+
+
     // This is the copy constructor.
     VMInstance(VMInstance original){
         this.os = original.os;
