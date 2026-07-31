@@ -1,8 +1,8 @@
 package org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp;
 
-import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.ChatClient;
-import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.ImageClient;
-import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.NotificationClient;
+import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.interfaces.ChatClient;
+import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.interfaces.ImageClient;
+import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.interfaces.NotificationClient;
 
 public interface AIServiceClientFactory {
     
@@ -12,17 +12,3 @@ public interface AIServiceClientFactory {
     
     ImageClient createImageClient();
 }
-
-/**
- * 
- * 
- * 
- * Input: "openAI"
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- */

@@ -1,32 +1,28 @@
 package org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.llmmodels;
 
 import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.AIServiceClientFactory;
-import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.anthropic.AnthropicChatClient;
-import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.anthropic.AnthropicImageClient;
-import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.anthropic.AnthropicNotificationClient;
 import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.interfaces.ChatClient;
 import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.interfaces.ImageClient;
 import org.yourcompany.scaler.mfweveningjune26.designpattern.factorydp.features.interfaces.NotificationClient;
 
-public class AnthropicClient implements AIServiceClientFactory {
+public class OpenAIClient implements AIServiceClientFactory {
 
     @Override
     public ChatClient createChatClient() {
-        System.out.println("AnthropicClient: ");
-       return new AnthropicChatClient();
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'createChatClient'");
     }
 
     @Override
     public NotificationClient createNotificationClient() {
-         System.out.println("AnthropicClient: ");
-         return new AnthropicNotificationClient();
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'createNotificationClient'");
     }
 
     @Override
     public ImageClient createImageClient() {
-         System.out.println("AnthropicClient: ");
-         return new AnthropicImageClient();
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'createImageClient'");
     }
-
     
 }
