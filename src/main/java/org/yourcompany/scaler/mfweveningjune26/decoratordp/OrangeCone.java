@@ -15,7 +15,7 @@ public class OrangeCone implements IceCreamConstituent {
             return 20;
         }
         // you are a add-on.
-        return 20 + this.iceCreamConstituent.getCost()
+        return 20 + this.iceCreamConstituent.getCost();
     }
 
     @Override
